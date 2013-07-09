@@ -10,9 +10,8 @@ var events = require('events')
   , path = require('path')
   , util = require('util')
   , _ = require('underscore')
-  , P = Peeper.prototype
 
-util.inherits(Peeper, events.EventEmitter)
+
 
 function Peeper(filename, options, listener) {
   var self = this
@@ -34,6 +33,9 @@ function Peeper(filename, options, listener) {
     self.emit('change', filename)
   })
 }
+
+util.inherits(Peeper, events.EventEmitter)
+var P = Peeper.prototype
 
 P.close = function() {
   fs.unwatchFile(this.filename)
