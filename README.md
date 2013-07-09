@@ -7,7 +7,7 @@ It currently uses polling only with a customizable interval.
 
 You may watch files and directories whether they exist or not.
 
-## ```peeper.watch(filename, [options], [listener])```
+### ```peeper.watch(filename, [options], [listener])```
 
 Returns an object implementing the FSWatcher interface from node core. Only
 change events are emitted. This function will not throw an error.
