@@ -11,8 +11,6 @@ var events = require('events')
   , util = require('util')
   , _ = require('underscore')
 
-
-
 function Peeper(filename, options, listener) {
   var self = this
 
