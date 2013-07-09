@@ -1,6 +1,6 @@
 {
   "name": "peeper",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "it watches your directories silently and creepily",
   "main": "index.js",
   "scripts": {
